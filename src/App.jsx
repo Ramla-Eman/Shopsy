@@ -1,10 +1,11 @@
 import React from "react";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
-import Produts from "./Components/Products/Produts";
+import Produts from "./Components/Produts";
 // Import AOS for animation
 import AOS from "aos";
 import 'aos/dist/aos.css';
+import TopProducts from "./Components/TopProducts";
 
 function App() {
   React.useEffect(() => {
@@ -21,6 +22,7 @@ function App() {
       <Navbar />
       <Hero />
       <Produts />
+      <TopProducts/>
     </>
   );
 }
