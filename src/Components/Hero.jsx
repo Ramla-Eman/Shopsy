@@ -55,16 +55,16 @@ const Hero = () => {
         {ImageList.map((item) => (
           <div
             key={item.id}
-            className="lg:px-[14rem] py-2 pb-8 lg:pb-0 overflow-y-hidden"
+            className="p-[1rem] lg:px-[18rem] py-2 pb-8 lg:pb-0 overflow-y-hidden"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 overflow-y-hidden">
               {/* Text content section */}
               <div className="flex flex-col justify-center gap-4 pt-12 sm:pt-0 text-center sm:text-left order-2 sm:order-1 relative">
-                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold">
+                <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold" data-aos="zoom-out" data-aos-duration="500" data-aos-once="true">
                   {item.title}
                 </h1>
-                <p className="text-sm">{item.description}</p>
-                <div>
+                <p className="text-sm" data-aos="fade-up" data-aos-duration="500" data-aos-delay="100">{item.description}</p>
+                <div data-aos="fade-up" data-aos-duration="500" data-aos-delay="300">
                   <button className="bg-gradient-to-r from-primary to-secondary hover:scale-105 duration-200 text-white py-2 px-4 rounded-full">
                     Order Now
                   </button>
@@ -72,7 +72,7 @@ const Hero = () => {
               </div>
               {/* Image section */}
               <div className="order-1 sm:order-2">
-                <div className="relative z-10">
+                <div className="relative z-10"  data-aos="zoom-in" data-aos-once="true">
                   <img
                     src={item.img}
                     alt=""
