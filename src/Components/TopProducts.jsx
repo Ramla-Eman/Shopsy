@@ -47,7 +47,7 @@ const TopProducts = () => {
         {/* Body Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center gap-20 md:gap-5">
           {ProductsData.map((data) => (
-            <div className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]" data-aos="zoom-in">
+            <div key={data.id} className="rounded-2xl bg-white dark:bg-gray-800 hover:bg-black/80 dark:hover:bg-primary hover:text-white relative shadow-xl duration-300 group max-w-[300px]" data-aos="zoom-in">
               {/* Images Section */}
               <div className="h-[100px]">
                 <img

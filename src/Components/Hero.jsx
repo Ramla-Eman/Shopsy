@@ -55,7 +55,7 @@ const Hero = () => {
         {ImageList.map((item) => (
           <div
             key={item.id}
-            className="p-[1rem] lg:px-[18rem] py-2 pb-8 lg:pb-0 overflow-y-hidden"
+            className="px-[1rem] 2xl:px-[14rem] py-2 pb-8 lg:pb-0 overflow-y-hidden"
           >
             <div className="grid grid-cols-1 sm:grid-cols-2 overflow-y-hidden">
               {/* Text content section */}
