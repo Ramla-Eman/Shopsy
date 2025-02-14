@@ -46,6 +46,7 @@ const Hero = () => {
     pauseOnHover: false,
     pauseOnFocus: true,
   };
+  
   return (
     <div className="relative overflow-hidden min-h-[550px] sm:min-h-[650px] bg-gray-100  dark:bg-gray-950 dark:text-white duration-200 ">
       {/* Background Pattern */}
